@@ -1,0 +1,48 @@
+.todo-item {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  border-radius: 8px;
+  transition: all 0.4s ease-out;
+}
+
+.todo-item h2 {
+  background-color: aliceblue;
+  flex: 1;
+  padding: 1.4rem;
+  font-size: 1.1em;
+  font-weight: 400;
+
+  text-transform: capitalize;
+  border-radius: 8px;
+}
+
+.icon-item {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.btn-item {
+  border: none;
+  outline: unset;
+  padding: 4px;
+  background-color: white;
+}
+.removedItem {
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 420px) {
+  .icon-item {
+    font-size: 2em;
+  }
+}
